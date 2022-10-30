@@ -46,6 +46,7 @@ export class Player {
         }
     }
     draw(context) {
+        if (this.game.debug) context.strokeRect(this.x, this.y, this.width, this.height)
         context.drawImage(this.image, this.frameX * this.width, this.frameY * this.height, 100, 91.3, this.x, this.y, this.width, this.height)
     }
     onGround() {
