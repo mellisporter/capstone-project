@@ -95,7 +95,7 @@ export class Falling extends State {
 
 export class Rolling extends State {
     constructor(game) {
-        super('ROLLING');
+        super('ROLLING', game);
     }
     enter(){
         this.game.player.frameX = 0;

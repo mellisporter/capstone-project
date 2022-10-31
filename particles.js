@@ -1,7 +1,7 @@
 class Particle {
     constructor(game) {
         this.game = game;
-        this.markedForDeletion = fale;
+        this.markedForDeletion = false;
     }
     update() {
         this.x -= this.speedX + this.game.speed;
